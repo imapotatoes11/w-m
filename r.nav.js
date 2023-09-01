@@ -48,33 +48,34 @@ class NavBar extends React.Component {
                     {/*        padding:".2em .2em"*/}
                     {/*    }*/}
                     {/*}>≡</h1>*/}
-                    <div>
-                        <img src={"assets/moma_min.png"} style={{maxWidth:"50px"}}></img>
+                    <div onClick={()=>window.location.href!=="index.html"?window.location.href="index.html":null}
+                    style={{cursor:"pointer"}}>
+                        <img src={"assets/moma_min.png"} style={{maxWidth:"60px"}}></img>
                     </div>
-                    <div style={{backgroundColor:"var(--main-color-dark"}}>
-                        <h1 style={{
-                            fontSize:"32px",
-                            position:"fixed",
-                            margin:"auto auto",
-                            // left: "50%",
-                            top: "2.5%",
-                            // transform: "translate(-50%)",
-                            color:"var(--text-color-light)",
-                            cursor:"pointer",
-                            fontWeight:"bold",
-                        }} onClick={()=>{window.location.href="#"}}>
-                            MoMa多元文化音樂藝術教育中心
-                        </h1>
-                        <p style={{
-                            position:"fixed",
-                            margin:"auto auto",
-                            // left: "50%",
-                            color:"var(--text-color-light)",
-                            top: "8.5%"
-                        }}>
-                            Multicultural  Organization for Promoting Music and Art Education
-                        </p>
-                    </div>
+                    {/*<div style={{backgroundColor:"var(--main-color-dark"}}>*/}
+                    {/*    <h1 style={{*/}
+                    {/*        fontSize:"32px",*/}
+                    {/*        position:"fixed",*/}
+                    {/*        margin:"auto auto",*/}
+                    {/*        // left: "50%",*/}
+                    {/*        top: "2.5%",*/}
+                    {/*        // transform: "translate(-50%)",*/}
+                    {/*        color:"var(--text-color-light)",*/}
+                    {/*        cursor:"pointer",*/}
+                    {/*        fontWeight:"bold",*/}
+                    {/*    }} onClick={()=>{window.location.href="#"}}>*/}
+                    {/*        MoMa多元文化音樂藝術教育中心*/}
+                    {/*    </h1>*/}
+                    {/*    <p style={{*/}
+                    {/*        position:"fixed",*/}
+                    {/*        margin:"auto auto",*/}
+                    {/*        // left: "50%",*/}
+                    {/*        color:"var(--text-color-light)",*/}
+                    {/*        top: "8.5%"*/}
+                    {/*    }}>*/}
+                    {/*        Multicultural  Organization for Promoting Music and Art Education*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
                     <div className={"nav-items"}>
                         <a className={"nav-item"} href={"#"}>三大赛项</a>
                         <a className={"nav-item"} href={"#"}>奖项设置</a>
