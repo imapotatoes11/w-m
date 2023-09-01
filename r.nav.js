@@ -32,7 +32,15 @@ class NavBar extends React.Component {
                     fontFamily:"'Cabin', Noto-sans-sc, sans-serif",
                     zIndex:"999 !important",
                     // position:"fixed",
-                    backgroundColor:"var(--main-color)"
+                    backgroundColor:"var(--main-color-dark)",
+                    /*position:fixed;background:white;width:100%;margin:0;
+        padding-top:1em;
+        padding-bottom:1em;top:0;*/
+                    position:"fixed",
+                    width:"100%",
+                    top:"0",
+                    paddingTop:"1em",
+                    paddingBottom:"1em"
                 }}>
                     {/*<h1 id={"hamburger"} style={*/}
                     {/*    {*/}
@@ -41,6 +49,9 @@ class NavBar extends React.Component {
                     {/*    }*/}
                     {/*}>≡</h1>*/}
                     <div>
+                        <img src={"assets/moma_min.png"} style={{maxWidth:"50px"}}></img>
+                    </div>
+                    <div style={{backgroundColor:"var(--main-color-dark"}}>
                         <h1 style={{
                             fontSize:"32px",
                             position:"fixed",
@@ -48,7 +59,7 @@ class NavBar extends React.Component {
                             // left: "50%",
                             top: "2.5%",
                             // transform: "translate(-50%)",
-                            color:"var(--text-color)",
+                            color:"var(--text-color-light)",
                             cursor:"pointer",
                             fontWeight:"bold",
                         }} onClick={()=>{window.location.href="#"}}>
@@ -58,6 +69,7 @@ class NavBar extends React.Component {
                             position:"fixed",
                             margin:"auto auto",
                             // left: "50%",
+                            color:"var(--text-color-light)",
                             top: "8.5%"
                         }}>
                             Multicultural  Organization for Promoting Music and Art Education

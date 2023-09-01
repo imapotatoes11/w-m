@@ -30,7 +30,7 @@ class NavBarBLG extends React.Component {
                     padding:"7vh",
                     width:"200%",
                     transform:"translateX(-100px)translateY(-100px)",
-                    backgroundColor:"var(--main-color)"
+                    backgroundColor:"var(--main-color-dark)"
                 }}></div>
             )
     }

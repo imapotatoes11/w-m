@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:rgb(245,245,245);">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+
+  <title>test</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
+
+  <!--react stuff-->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+  <script src="r.nav.js" type="text/babel"></script>
+  <script src="r.navBLG.js" type="text/babel"></script>
+</head>
+<body style="padding:0;margin:0;">
+<div id="bootleg-nav-backdrop" style="background-color:var(--main-color-dark)"></div>
+<div id="nav-div" style="background-color:var(--main-color-dark)"></div>
+<!--<div id="the-rest-of-the-stuff"-->
+<!--style="margin:0;margin-top:100px;">-->
+<!--<div class="panel1-borderless" style="text-align:left; margin:0;margin-top:100px;">-->
+<!--  <div class="panel1-in" id="backgrad-1" style="padding-top:2em;padding-bottom:3em;">-->
+<!--    <h2>-->
+<!--      <img src="assets/moma_min.png" width="100">-->
+<!--    </h2>-->
+<!--    <h2>MoMa多元文化音樂藝術教育中心</h2>-->
+<!--    <h3>Multicultural  Organization for Promoting Music and Art Education</h3>-->
+<!--    &lt;!&ndash;            <p style="max-width:50%; margin:auto auto;">Donec aliquam felis mollis risus accumsan, eu accumsan arcu semper. Aliquam et rhoncus mi. Pellentesque aliquet tortor libero, ac rutrum felis iaculis vel. Nulla nec nisi ac est egestas elementum non id augue. Cras tincidunt est velit, non varius eros volutpat ac. In convallis semper lacus sed pulvinar. Quisque eget ligula felis. Ut vel euismod nulla, at mollis tellus. Duis felis purus, sollicitudin eu vehicula sit amet, ultricies non neque. Etiam elit odio, ultricies eu nisl quis, gravida ultrices ligula.</p>&ndash;&gt;-->
+<!--  </div>-->
+<!--</div>-->
+<div class="panel1-borderless" style="/*text-align:left;*/ margin:0;margin-top:100px;display:flex;flex-wrap:wrap">
+  <div class="panel1" style="text-align:left;">
+    <h1>2022 CIMC-MOMA 6th Canadian International Music Competition Result</h1>
+    <h2>Oboe Young Artist Award</h2>
+    - 1st: Jiahao Rao（Fujian）
+    - 3rd: Hanyu Wang（Fujian）
+    <h2>Percussion Young Artist Award</h2>
+    - 1st: ChengLe Wu（Toronto ）
+    <h2>Violin Special Theme Award – Johann Sebastian Bach</h2>
+    - 2nd: Mellissa Liu（L.A）
+    <h2>Violin Young Artist Award</h2>
+    - 1st: Angela Yuan (Toronto), Jane Hu（New Jersey）
+    - 2nd: Robert(Zixu)Guo（Toronto ）
+    - 3rd: Shangjunhao Wang（Toronto ）, Mellissa Liu（L.A）, Yeeshuen Li（Toronto ）
+    <h2>Violin Outstanding Performance Award</h2>
+    - Yansheng（Oscar）Peng（Wuhan）
+    - Zihan Xie （Wuhan）
+    - Alexandre Gallant（Toronto ）
+    - Wenxuan Song（Wuhan）
+    <h2>Violin Performance Award</h2>
+    - Quancheng（Eric）Jiang（Wuhan）
+    - JiaJun Wu（Wuhan）
+    - Weijie（Jackie）Wang（Wuhan）
+    - Tianbu Feng（Wuhan）
+    - Ruan Luo Jun Ye（Wuhan）
+    - ZeYu （Elina）Gao （Wuhan）
+    <h2>Viola Special Theme Award – Johann Sebastian Bach</h2>
+    - 3rd: Jasmine Jia（Toronto ）
+    <h2>Viola Young Artist Award</h2>
+    - 1st: Raymond. Chen(New Jersey）、Jiachen Jiang（New Jersey）
+    - 3rd: Jasmine Jia（Toronto ）
+    <h2>Cello Young Artist Award</h2>
+    - 1st: Xinrui Li（California）
+    - 2nd: Leshan Li（California）
+    <h2>Cello Special Theme Award – Johann Sebastian Bach</h2>
+    - 2nd: Leshan Li（California）、Xinrui Li（California）
+    <h2>Cello Chinese Music Performance Award</h2>
+    - 1st: Leshan Li （California）、Xinrui Li（California）
+    <h2>Professional Special Theme Award – Johann Sebastian Bach Double Bass</h2>
+    - 2nd: Ouyang chun zhen（Shenzhen）
+    <h2>Classical Chamber Ensemble Young Artist Award</h2>
+    - 1st: 《Pirates of the Caribbean~Hans Zimmer 》 Harbin Institute of Technology，Shenzhen-HIT Student Orchestra（Shenzhen）
+    - 《 The nightingale》Violin & Cello William McLeod Davidson/Thomas Joshua Davidson（U.K）
+    - 《Duo for Violin and Viola in G Major, K.423: II. Adagio 》 Jiachen Jiang & Jane Hu（New Jersey）
+    - 《Jasmine》 Flute: Alicia Chen/Piano: Michelle Li/Violin: Helena You/Edward Zhang/Emma Li/Cello: Eason Wang（Toronto ）
+    <h2>Flute Young Artist Award</h2>
+    - 1st: YiXuan Zhang（Fujian）
+    - 2nd: Feihan Yu （Toronto ）
+    - 3rd: Joanna Zhang （Toronto ）
+    <h1>Vocal Results</h1>
+    <h2>Bel Canto Chinese Music Performance Award Group B</h2>
+    - 3rd: Qingning Chen （Hong Kong）
+    <h2>Bel Canto Chinese Music Performance Award Group C</h2>
+    - 2nd: Serena Lee （Hong Kong）
+    - 3rd: Luoning Pan（Hong Kong）
+    <h2>Adult Group B</h2>
+    - 1st: Ying Liu (Ottawa）
+    - 2nd: Yu Ting （Hong Kong）
+    <h2>Adult Group C</h2>
+    - 2nd: Ying Yu（Toronto ）
+    <h2>Popular Singing Chinese Music Performance Award Children Group B</h2>
+    - 3rd: Eleanor Hu Jin（Toronto ）
+    <h2>Popular Singing Chinese Music Performance Award Group A</h2>
+    - 3rd: Xuanting Li（Toronto ）
+    <h2>Popular Singing Chinese Music Performance Award Group C</h2>
+    - 1st: Serena Lee（Hong Kong）
+    <h2>Popular Singing Chinese Music Performance Award Adult Group A</h2>
+    - 2nd: Meizi Shi （Shaanxi）
+    <h2>Popular Singing Chinese Music Performance Award Adult Group C</h2>
+    - 2nd: Cuifeng Qiu (Mary)（Toronto ）
+    <h2>Folk songs singing Chinese Music Performance Award Group B</h2>
+    - 1st: Ella Li （Toronto ）
+    <h2>Folk songs singing Chinese Music Performance Award Group C</h2>
+    - 1st: Guan Zihe（Hong Kong ）
+    <h2>Bel Canto Young Artist Award Children Group A</h2>
+    - 3rd: Minnie wen yi He （U.K）
+    <h2>Bel Canto Young Artist Award Children Group B</h2>
+    - 3rd: Thomas Li（U.K）
+    <h2>Bel Canto Young Artist Award Group A</h2>
+    - 2nd: Yu Ye（U.k）、Austin Du（Toronto ）
+    - 3rd: Anya yinjia Xue（Hong Kong）、Nilani Jeyakumaran（U.K）
+    <h2>Bel Canto Young Artist Award Group B</h2>
+    - 1st: Chin Wing Lee（Hong Kong）
+    - Mireille Francene Ilagan（U.K）
+    - 2nd: Qingning Chen（Hong Kong）
+    - Tin Nam Max Cheung（Hong Kong）
+    - Bhavik Deepak More（U.K）、Yeuk Fan Tina Hu（Hong Kong）
+    - 3rd: Lucas Jun Long He（U.K）
+    <h2>Bel Canto Young Artist Award Group C</h2>
+    - 1st: Serena Lee（Hong Kong）
+    - Noble Randertssson Salvadurai（U.K）
+    - 2nd: Shuangying Wei（Hong Kong）
+    - Qianzhen Huang（Hong Kong）
+    - Man Yi Lam（Hong Kong）、Luoning Pan（Hong Kong）
+    - 3rd: Zhao Ze Charlie Wang（Hong Kong）
+    - Hei Nga Serina Wong（Hong Kong）
+    <h2>Bel Canto Young Artist Award Group D</h2>
+    - 1st: Shuhan Li（Shenzhen）、Emma Ren（Toronto ）
+    <h2>Bel Canto Young Artist Award Group E</h2>
+    - 1st: Jia jie Wu（Taiyuan）
+    - 2nd: Amir Ashkahn Entezari（U.K）
+    - 3rd: Lie Lin（Hong Kong）
+    <h2>Bel Canto Young Artist Award Adult Group B</h2>
+    - 3rd: Yu Ting（Hong Kong）
+    <h2>Bel Canto chorus Group B</h2>
+    - 1st: Mireille Francene Ilagan & Jake Gavin Dimarucut（U.K）
+    <h2>Bel Canto chorus Group C</h2>
+    - 2nd: Oakville Starz ：Kacy Zhang, /Sarina Wu, /Gloria Qian,/Grace Zhou:（Toronto ）
+    - 3rd: Ya wen Zheng & Zheng ying Zhang（U.K）
+    <h1>Piano Results</h1>
+    <h2>Piano 4 Hands Young Artist Award Group A</h2>
+    - 2nd: Serena pan & Eileen Sha(Toronto ）
+    <h2>Piano 4 Hands Young Artist Award Group B</h2>
+    - 2nd: Oscar Siu Man Feng & Bosco Ho Yin Feng（Toronto ）
+    <h2>Piano 4 Hands Young Artist Award Group C</h2>
+    - 1st: Kitty Chen & Victoria Chi（Toronto ）
+    - 2nd: Victoria Chi & Kitty Chen （Toronto ）
+    <h2>Piano Solo Chinese Music Performance Award Children Group B</h2>
+    - 1st: Eleanor Hu Jin（Toronto ）
+    <h2>Piano Solo Chinese Music Performance Award Group B</h2>
+    - 1st: Yiran Liu（PEI)
+    - 2nd: Eric Jiaheng Wang（Toronto ）
+    - 3rd: Rainn Ji (Shanghai )、 Wenyi Li（Toronto)
+    <h2>Piano Solo Special Theme Award – Johann Sebastian Bach Group A</h2>
+    - 2nd: Emily Chen（Toronto)
+    - 3rd: Menghang Li（Toronto)
+    <h2>Piano Solo Special Theme Award – Johann Sebastian Bach Group B</h2>
+    - 1st: Yiran Liu（PEI）、GuanHua Li （Taiyuan）
+    - 2nd: Maorui Zhi（Toronto)
+    - 2nd: Brandon Xu（Toronto)
+    <h2>Piano Solo Special Theme Award – Johann Sebastian Bach Group D</h2>
+    - 2nd: Jasmine Jia（Toronto)
+    <h2>Piano Solo Special Piano Theme Award – Chopin Group A</h2>
+    - 3rd: Yiduo Chen （Calgary）
+    <h2>Piano Solo Special Piano Theme Award – Chopin Group B</h2>
+    - 1st: Chloe Huang（Toronto)
+    <h2>Piano Solo Special Piano Theme Award – Chopin Group C</h2>
+    - 2nd: Ying-chen Lin（Taiwan）、Oscar Siu Man Feng（Toronto)
+    <h2>Piano Solo Young Artist Award Children Group A</h2>
+    - 2nd: Margaret Xie（Toronto)
+    <h2>Piano Solo Young Artist Award Children Group B</h2>
+    - 1st: LiamYang Xu（Xiamen）<br>
+    - Lucas Lin（Toronto)、Jayden chen（Toronto)<br>
+    - 2nd: Leo Li（PEI）、 Alina Zheng（Toronto)、George Wang（Toronto)<br>
+    - 1st: Austin Chen（Toronto), Amy Yang（Toronto)<br>
+    - 2nd: Jenny Zhai（PEI)<br>
+    - Huanran Lin（Toronto)、Tristan Ye（Toronto)<br>
+    - 1st: Yiran Liu（PEI)<br>
+    - 2nd: Biyao Yu （Yunnan）、Yinuo Mao（PEI)、 Yi Pan（PEI）<br>
+    - 3rd: ChenHao Xu（France）<br>
+    - 1st: Xinyu Li （Hainan）<br>
+    - 2nd: Qihe(Rick) Jin（Calgary）<br>
+    - Alysa Zack（U.K)<br>
+    - Thomas chen（Toronto )、Kevin Z.M. Wang（Toronto ）<br>
+    - 1st: Jonathan Mark Davidson（U.K)<br>
+    - 2nd: Matthew Xie（Toronto ）<br>
+    - Hansen Gao（Toronto)、Lucas Liao（Toronto )<br>
+    - 3rd: Yu Ting（Hong Kong）<br>
+    - 2nd: Austin Du （Toronto ）<br>
+    - 3rd: Erin Shen（Hong Kong）<br>
+    - 3rd: Anny Li（Hong Kong）<br>
+    - 1st: Sarina Wu（Toronto ）<br>
+    - 2nd: Sumyee Kwong（Hong Kong）、Serena Lee（Hong Kong）<br>
+    - 3rd: Man Yi Lam（Hong Kong）<br>
+    - 1st: Siyi Li （Jiangsu）、Kacy Zhang（Toronto ）<br>
+    - Liwei Xu（Toronto ）、Emma Ren（Toronto ）<br>
+    - 2nd: Yuan hui Tian（Hong Kong）<br>
+    - 2nd: Eleanor Hu Jin（Toronto ）<br>
+    - 2nd: Ella Li（Toronto ）<br>
+    - 2nd: Serena Lee（Hong Kong）<br>
+    - 2nd: Zihan Zhang（Toronto ）<br>
+    - Special Award for Original Work Christine Wu (Toronto)<br>
+    - 2nd: Qing Wu（Toronto ）<br>
+    - 1st: YingHan Ma（Tianjin）<br>
+    - Bel Canto chorus Group B<br>
+    - 1st: Mireille Francene Ilagan & Jake Gavin Dimarucut（U.K）<br>
+    - 2nd: Oakville Starz ：Kacy Zhang, /Sarina Wu, /Gloria Qian,/Grace Zhou:（Toronto ）<br>
+    - 3rd: Ya wen Zheng & Zheng ying Zhang（U.K）<br>
+    <h1>Chinese traditional musical instrument Results</h1><br>
+    <h2>Yangqin solo Group B</h2><br>
+    - 1st: Mingzhao Yu (Toronto)<br>
+    <h2>Hulusi Solo Group B</h2><br>
+    - 2nd: Michelle Meiqing Li (Toronto)<br>
+    <h2>Erhu Solo Group A</h2><br>
+    - 1st: Kejie Huang (Yunnan)<br>
+    <h2>Erhu Solo Group B</h2><br>
+    - 1st: Ziwen Zhang (Toronto)<br>
+    <h2>Erhu Solo Group D</h2><br>
+    - 2nd: Maxwell Wu (las Vegas)<br>
+    <h2>Adult Erhu Solo Group A</h2><br>
+    - 1st: Yexun Wang (Saskatoon)<br>
+    - Erhu Solo (Outstanding Performance Award)<br>
+    - Group B<br>
+    - Sitong Guo (Guangxi)<br>
+    - Professional Erhu solo Group E<br>
+    - 1st: Zoe Li (New Zealand)<br>
+    - Chinese Flute Children Group B<br>
+    - 2nd: Yuxi Chen (Zhejiang)<br>
+    - Group A<br>
+    - 2nd: Horace Ho (California)<br>
+    - Group B<br>
+    - 1st: Alex Yu (California)<br>
+    - 3rd: Michael FiZiLiang Smith (California)<br>
+    - Group C<br>
+    - 1st: San San Cai (Aomen)<br>
+    - 2nd: TingTing Jiang (Toronto)<br>
+    - Group E<br>
+    - 3rd: Thao Leong (California)<br>
+    - Professional Chinese Flute Group D<br>
+    - 2nd: Chenwei Bian (Nanjing）<br>
+    - Group E<br>
+    - 1st: Peng Guo (Nanjing）<br>
+    - Professional Chinese Flute Group Aldult A<br>
+    - 1st: Ran Zang (Nanjing）<br>
+    - Professional Xiao Solo Group E<br>
+    - 2nd: Peng Guo (Nanjing）<br>
+    - Guqin Group A<br>
+    - 1st: Tong Yao Zhang (Yunnan)<br>
+    - Professional Guqin Solo Adult Group A<br>
+    - 1st: Ran Zang (Nanjing）<br>
+    - Zhongruan Solo Group B<br>
+    - 2nd: Jennifer Zhao (Saskatoon)<br>
+    - Pipa Solo Group A<br>
+    - 2nd: Elsa Ren （Toronto)<br>
+    - Group C<br>
+    - 3rd: Jennifer Zheng (las Vegas)<br>
+    - Group D<br>
+    - 1st: Kasey N Green (las Vegas)<br>
+    - Group E<br>
+    - 3rd: Rosa Chen （Toronto ）<br>
+    - Chinese Ethnic Instrument Ensemble Group A<br>
+    - 2nd: Noah Xie Zhang, / Chelsea Tan （Vancouver）<br>
+    - Sicheng Tan, / Hengxian Liu, / Kangzhiju Huang (Yunnan)<br>
+    - Group B<br>
+    - 1st: Sherri Tian ,/ Caitlyn Wu, / Catherine Hsiu-Wen Hsu ,/<br>
+    - Isabelle Yu-Chen Hsu, / Emma Yu ,/ Elsa Ren（Toronto)<br>
+    - Group C<br>
+    - 2nd: Wendy Yan / Xuchen Zhang （Vancouver）<br>
+    - Group D<br>
+    - 1st: Kasey Green,/Angela Zhang, /Jade Chang, /<br>
+    - Allison Tang, /.Maxwell Wu,/ Hongqing Feng,/<br>
+    - Jennifer Zheng (las Vegas)<br>
+    - Adult Chinese Ethnic Instrument Ensemble Group A<br>
+    - 1st: Yexun Wang,/ Tiffany Yu,/ Jennifer Zhao (Saskatoon)<br>
+    - Guzheng Solo Children Group B<br>
+    - 1st: Angelina Lou （Ottawa）<br>
+    - 3rd: Sherrey Sun（Ottawa）、JiaYin Zhao（Toronto ）<br>
+    - Group A<br>
+    - 1st: Mido Su (Ottawa)<br>
+    - 2nd: Samantha Shiyan Liu(Ottawa), Alma Fei (Saskatoon)<br>
+    - Perceval Larochelle（Ottawa), Yejinge yuan (Toronto)<br>
+    - Eva Rantongle Wang（Ottawa), Sandy Zhang (Saskatoon)<br>
+    - 3rd: Zoey ZY U W Zeng (Toronto),<br>
+    - Xiaohan Dong (Toronto)<br>
+    - Group B<br>
+    - 1st: Helen Lei (Toronto), Yutong Du (Ottawa),<br>
+    - Jingyi(Linda)Liu (Toronto), Jerrica chen (Toronto)<br>
+    - Ellie Zhao（Toronto), Yucheng Xi (Toronto)<br>
+    - Yilin Li (Toronto), Grace-Keyi Wang (Ottawa)<br>
+    - Yixuan (Joanna) Mu(Toronto)<br>
+    - 2nd: Eva Li (Ottawa), Hongkai Zhang (Ottawa),<br>
+    - Jenny Jiang (Ottawa), Emily Liu (Toronto)<br>
+    - Yi Yi Liu (Toronto ), Yufei Gan (Toronto)<br>
+    - Yijia Qin (Toronto), Sihan Zhang (Saskatchewan)<br>
+    - Murui Wang (Ottawa) , Shangzhemei Wang (Toronto),<br>
+    - Teena Zheng (Ottawa) , Leia Qian (Ottawa),<br>
+    - 3rd: Coyi Huang (Toronto), Briana lu (Toronto)<br>
+    - Monica Cao (Toronto)<br>
+    - Group C<br>
+    - 3rd: Anna Valpiani (las Vegas)<br>
+    - Group D<br>
+    - 2nd: Fan Dong (las Vegas)<br>
+    - 3rd: Li Dong (las Vegas)<br>
+    - Group E<br>
+    - 1st: Liting Lan (Toronto)<br>
+    - Adult Group A<br>
+    - 2nd: Sirong Zhu (Toronto)<br>
+    - Adult Group B<br>
+    - 2nd: Bella Zhang (Toronto)<br>
+    - 3rd: Jiarong Tan (Toronto)<br>
+    - Professional Guzheng Solo Adult Group A<br>
+    - 1st: Tiffany Yu (Saskatoon)<br>
+  </div>
+</div>
+<!--</div>-->
+</body>
+</html>

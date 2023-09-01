@@ -15,6 +15,11 @@
     /*font-family:"SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-family: 'Cabin',Arial,Helvetica,sans-serif;
 }
+html{
+    background:linear-gradient(196deg, rgb(255, 242, 242), rgb(246, 255, 252));
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
 
 
 #nav-menu-content {
@@ -47,7 +52,6 @@
     margin-left:0.5em;margin-right:0.5em;
     text-decoration: none;
     color:var(--text-color);
-    /*outline:5px solid deeppink;*/
     background:var(--tertiary-color);
 
     transition: .3s ease-out;
@@ -60,8 +64,7 @@
     padding:7vh;
     width:200%;
     transform:translateX(-100px)translateY(-100px);
-    background-color:var(--main-color);
-    /*z-index:-2;*/
+    background-color:var(--main-color-dark);
 }
 
 .underline{
@@ -126,13 +129,36 @@ section {
     margin:1em;
     padding:1em;
 
-    border:5px solid #919191;
+    /*border:5px solid #919191;*/
     border-radius:0.5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background:white;
 
     text-align:center;
     justify-content:center;
 
     width:auto;
+}
+.panel1-in{
+    margin:1em;
+    padding:1em;
+
+    /*border:5px solid #919191;*/
+    border-radius:0.5em;
+    /*make box shadow identical to the one in panel1 but inset*/
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
+    background:white;
+
+    text-align:center;
+    justify-content:center;
+
+    width:auto;
+}
+#backgrad-1{
+    background-image: url("assets/back_grad1_op15.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-y:center;
 }
 .panel1-borderless{
     margin:1em;
@@ -399,6 +425,7 @@ input:checked ~ .tab-content {
     float:right;
     right:1em;
     top:2%;
+    background-color:var(--main-color-dark)
 }
 .nav-item{
     margin:1em;
@@ -406,10 +433,14 @@ input:checked ~ .tab-content {
     cursor:pointer;
     transition:0.5s ease-out;
 
-    color: var(--text-color);
+    color: var(--text-color-light);
     text-decoration:none;
 
     position:relative;
+}
+.nav-item:hover{
+    transform: scale(101%);
+    color: #c1d0ea;
 }
 .nav-item::before{
     content: '';
@@ -418,8 +449,8 @@ input:checked ~ .tab-content {
     right: 0;
     width: 0;
     height: 2.5px;
-    background-color: #000000;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    background-color: #c1d0ea;/*var(--text-color-light);*/
+    transition: width 0.1s ease-out; /*0.6s cubic-bezier(0.25, 1, 0.5, 1)*/
 }
 
 @media (hover: hover) and (pointer: fine) {
