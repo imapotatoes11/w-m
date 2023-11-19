@@ -138,6 +138,8 @@ section {
     justify-content:center;
 
     width:auto;
+
+    z-index:-1;
 }
 .panel1-in{
     margin:1em;
